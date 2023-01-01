@@ -77,8 +77,8 @@ Movie.create!([{
   5.times do
   User.create!(
       username: Faker::Name.first_name,
-      email: "Faker::Name.first_name@icloud.com",
-      phonenumber: Faker::PhoneNumber.cell_phone 
+      email: Faker::Name.first_name+"@icloud.com",
+      phonenumber: Faker::PhoneNumber.phone_number_with_country_code 
     )
   end
 
