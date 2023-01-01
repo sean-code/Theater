@@ -70,5 +70,16 @@ Movie.create!([{
     poster: "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/the-batman_tgstxmov_500x749.jpg?v=1641930816"
   }])
 
+  puts "Successfully seeded with movies... 🎬"
 
-  puts "Successfully seeded with movies🎬"
+
+  puts "Seeding Users 🌱..."
+  5.times do
+  User.create!(
+      username: Faker::Name.first_name,
+      email: "Faker::Name.first_name@icloud.com",
+      phonenumber: Faker::PhoneNumber.cell_phone 
+    )
+  end
+
+  puts "Successfully seeded users... 👥 "
