@@ -16,10 +16,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_24_120735) do
 
   create_table "movies", force: :cascade do |t|
     t.text "title"
-    t.text "poster"
+    t.integer "duration"
+    t.text "genre"
+    t.text "director"
+    t.text "rating"
     t.text "description"
-    t.integer "rating"
     t.integer "price"
+    t.text "poster"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
