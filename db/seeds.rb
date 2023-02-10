@@ -74,7 +74,8 @@ Movie.create!([{
 
 
   puts "Seeding Users 🌱..."
-  5.times do
+
+  15.times do
   User.create!(
       username: Faker::Name.first_name,
       email: Faker::Name.first_name+"@icloud.com",
