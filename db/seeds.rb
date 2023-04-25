@@ -73,7 +73,7 @@ Movie.create!([{
   puts "Successfully seeded with movies... 🎬"
 
 
-  puts "Seeding Users 🌱..."
+
 
   15.times do
   User.create!(
